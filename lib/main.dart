@@ -4,12 +4,22 @@ void main() {
   runApp(const MyApp());
 }
 
+void test() {
+  final name = 'Agi';
+  if (name == 'Agi') {
+    print('Yes this is agi');
+  } else {
+    print('No this isn\'\t agi');
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
